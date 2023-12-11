@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GSAP Animation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ 
+  <!-- <div id="page1">
+    <div id="box">box</div>
+  </div>
+  <div id="page2">
+    <div id="box">box</div>
+  </div>
+  <div id="page3">
+    <div id="box">box</div>
+  </div> -->
+  <div id="page1">
+    <div id="nav">
+      <h1>Coucher</h1>
+      <div id="nav-part2">
+        <h3>service</h3>
+        <h3>about us</h3>
+        <h3>cases</h3>
+      </div>
+      <h4>Sign up</h4>
+    </div>
+    <div id="container">
+    <div id="left">
+      <h1>UNLIMITED PRETENTIOUS IDEAS</h1></div>
+    <div id="right">
+      <img src="data:image/jpeg;base64,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" alt="Description of the image">
+    </div>
+  </div>
+  </div>
+  <div id="page2">
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+  </div>
+  <div id="page1"></div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js" integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js" integrity="sha512-LQQDtPAueBcmGXKdOBcMkrhrtqM7xR2bVrnMtYZ8ImAZhFlIb5xrMqQ6uZviyeSB+4mYj89ta8niiCIQM1Gj0w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+   
